@@ -89,7 +89,7 @@ app.post("/getData", (req, res) =>{
              "fatTargetGram": fatTargetGram.toFixed(0),
              "carbTargetGram":carbTargetGram.toFixed(0)
             };
-        
+            console.log(data);
             res.json(data);
           
     }))

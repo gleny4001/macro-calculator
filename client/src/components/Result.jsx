@@ -7,8 +7,13 @@ function Result({macroData, formData}) {
   }
   return (
     <div className="result-container">
-      <h1>{macroData.totalKcal}</h1>
-      <h1>{macroData.totalProtein}</h1>
+      <p>{formData.proteinSource} : {macroData.proteinTargetGram}g</p>
+      <p>{formData.fatSource} : {macroData.fatTargetGram}g</p>
+      <p>{formData.carbSource} : {macroData.carbTargetGram}g</p>
+      <p>Total Kcal : {macroData.totalKcal}</p>
+      <p>Protein : {macroData.totalProtein}g</p>
+      <p>Fat : {macroData.totalFat}g</p>
+      <p>Carb : {macroData.totalCarb}g</p>
     </div>
   )
 }

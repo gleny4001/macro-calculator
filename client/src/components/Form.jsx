@@ -11,7 +11,7 @@ function Form() {
 
   const [page, setPage] = useState(0);
   const [formData, setFormData] = useState({
-    calories:0 ,
+    calories:"",
     proteinRatio:0,
     fatRatio:0,
     carbRatio:0,
@@ -21,6 +21,9 @@ function Form() {
   });
   const [finalData, setFinalData] = useState({});
   
+  const formTitles = ["What is your target calories?", "What is ratio?", "Choose your protein source", "Choose your fat source",  "Choose your carb source", ""];
+  
+
   async function postData(e){
     e.preventDefault();
     
@@ -28,7 +31,7 @@ function Form() {
     setFinalData(response.data);
   }
 
-  const formTitles = ["What is your target calories?", "What is ratio?", "Choose your protein source", "Choose your fat source",  "Choose your carb source", "Result"];
+ 
 
   const pageDisplay = () => {
     switch (page){

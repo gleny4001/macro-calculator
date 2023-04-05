@@ -11,6 +11,24 @@ section{
   position:fixed;
   width:100%;
 }
+/* ---------------------- Navbar -----------------------------------*/
+
+.navbar-brand{
+  color: #37447E;
+  font-weight:bold;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.nav-link{
+  color:#505F98;
+  margin-left: 60px;
+}
+
+.navbar{
+  background-color: transparent !important;
+}
 
 /* ----------------------Blob -----------------------------------*/
 .blob-container{
@@ -23,10 +41,16 @@ section{
 /* ---------------------- form  -----------------------------------*/
 
 .form{
+  position:absolute;
+  top:20%;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   height:80vh;
 }
 
@@ -36,7 +60,10 @@ section{
 }
 
 .body{
-  padding: 50px;
+  padding: 20px 50px 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title{
@@ -93,11 +120,14 @@ section{
 }
 
 .input-box{
-    border: 2px solid;
+    border: none;
     border-radius:20px;
     width:30vw;
     height:40px;
     text-align:center;
+}
+.input-box:focus{
+  outline: none;
 }
 
 input[type='number'] {
@@ -109,10 +139,18 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+/* ---------------------- Input-----------------------------------*/
 
+.info{
+  font-size: 11px;
+  color:#505F98;
+}
 /* ---------------------- Result page-----------------------------------*/
 
 .result-container {
   background-color: #CBCAF0;
-
+  border-radius: 20px;
+  padding:30px;
 } 
+
+
