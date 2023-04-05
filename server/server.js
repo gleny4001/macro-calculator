@@ -103,8 +103,3 @@ app.post("/getData", (req, res) =>{
 app.listen({port}, ()=>{console.log('listening on port ' + port)});
 
 
-
-//EDAMAN
-//appid : df43b31a
-//app_key : 542ecc8650968563ef453fa88da3502b
-//parserURL : https://api.edamam.com/api/food-database/v2/parser?app_id=df43b31a&app_key=542ecc8650968563ef453fa88da3502b&ingr=chicken%20breast&nutrition-type=cooking
